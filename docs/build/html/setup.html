@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Setup &mdash; Channel Manager  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Getting Started" href="getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Channel Manager
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-an-auto-voice-group">Creating an Auto Voice Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-game-rooms">Creating Game Rooms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-temporary-voice-channels">Creating Temporary Voice Channels</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Channel Manager</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/setup.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="setup">
+<h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
+<p>The following setup commands require Administrator permissions.</p>
+<div class="section" id="creating-an-auto-voice-group">
+<h2>Creating an Auto Voice Group<a class="headerlink" href="#creating-an-auto-voice-group" title="Permalink to this headline">¶</a></h2>
+<p>Auto Voice Groups allow server managers to keep their voice channel lists clear of clutter. When you set up a Voice
+Channel Group, the Channel Manager Bot creates the initial channel. When users join the channel a new one is
+created, and when they leave it is removed.</p>
+<div class="line-block">
+<div class="line">To create an Auto Voice Group, run the <code class="docutils literal notranslate"><span class="pre">/create</span> <span class="pre">autovoice</span></code> command. You will need to specify the name of the Auto Voice Group, the Category ID for which the group will live and the user limit of each voice group channel. For example:</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">/create</span> <span class="pre">autovoice</span> <span class="pre">&quot;General</span> <span class="pre">Voice&quot;</span> <span class="pre">535488577296138243</span> <span class="pre">10</span></code></div>
+<div class="line">When you set the name of the Auto Voice Group, ensure that you are using double quotes around the name (“”). You can leave the user limit parameter blank if you do not wish to set a user limit.</div>
+</div>
+<a class="reference internal image-reference" href="_images/auto_voice_group_command.gif"><img alt="Auto Voice Group" src="_images/auto_voice_group_command.gif" style="width: 800px;" /></a>
+</div>
+<div class="section" id="creating-game-rooms">
+<h2>Creating Game Rooms<a class="headerlink" href="#creating-game-rooms" title="Permalink to this headline">¶</a></h2>
+<p>Game Rooms are channels that are tailored to the type of game that a user is playing. The voice channel gets renamed
+based on what the majority of players are playing in the channel. Like Auto Voice Groups, new channels are created
+when a user joins a Game Room so that there is always a free channel.</p>
+<div class="line-block">
+<div class="line">To create Game Rooms, run the <code class="docutils literal notranslate"><span class="pre">/create</span> <span class="pre">gameroom</span></code> command. For example:</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">/create</span> <span class="pre">gameroom</span></code></div>
+<div class="line">You can specify a category ID if you would like, however, running the command as is will create the category for you. In addition, you can set a User Limit or leave the parameter blank if you do not wish to have a User Limit. If you do decide to set a User Limit on the Game Room channels, you will need to create your own Game Room Category. For example:</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">/create</span> <span class="pre">gameroom</span> <span class="pre">700402574452588595</span> <span class="pre">15</span></code></div>
+<div class="line">The above command will create the Game Room group under a category with an ID of 700402574452588595 and set a user limit to 15.</div>
+</div>
+<a class="reference internal image-reference" href="_images/game_room_command.gif"><img alt="Game Room" src="_images/game_room_command.gif" style="width: 800px;" /></a>
+</div>
+<div class="section" id="creating-temporary-voice-channels">
+<h2>Creating Temporary Voice Channels<a class="headerlink" href="#creating-temporary-voice-channels" title="Permalink to this headline">¶</a></h2>
+<p>Temporary Voice Channels give users of a server the freedom to create their own custom named channel. To keep things tidy,
+the channels are deleted once all users have left the channel.</p>
+<div class="line-block">
+<div class="line">To create a Temporary Voice Channel list, run the <code class="docutils literal notranslate"><span class="pre">/create</span> <span class="pre">temproom</span></code> command. For example:</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">/create</span> <span class="pre">temproom</span></code></div>
+<div class="line">You can specify a category ID if you would like, however, running the command as is will create the Temporary Category for you along with a text channel that gives your users instructions on how to make their own Voice Channel. For example:</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">/create</span> <span class="pre">temproom</span> <span class="pre">550753598271913986</span></code></div>
+<div class="line">The above command will create the Temporary Channel List under a category with an ID of 550753598271913986.</div>
+</div>
+<a class="reference internal image-reference" href="_images/temp_room_command.gif"><img alt="Temp Room" src="_images/temp_room_command.gif" style="width: 800px;" /></a>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="getting_started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Woj
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started &mdash; Channel Manager  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Setup" href="setup.html" />
+    <link rel="prev" title="Channel Manager Discord Bot" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Channel Manager
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#inviting-the-bot">Inviting the Bot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bot-administration">Bot Administration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bot-prefix">Bot Prefix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#auto-renumbering">Auto Renumbering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#import-data">Import Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Channel Manager</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Getting Started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/getting_started.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="inviting-the-bot">
+<h2>Inviting the Bot<a class="headerlink" href="#inviting-the-bot" title="Permalink to this headline">¶</a></h2>
+<p>You can invite the bot using the following url:</p>
+<p><a class="reference external" href="https://discordapp.com/oauth2/authorize?client_id=524648043061051432&amp;permissions=8&amp;scope=bot">https://discordapp.com/oauth2/authorize?client_id=524648043061051432&amp;permissions=8&amp;scope=bot</a></p>
+<p>The Channel Manager Bot should have administration permissions to ensure that nothing prevents it from making, removing and renaming channels. If, however, you do not wish to give the bot full permissions, make sure the following permissions are enabled:</p>
+<ul class="simple">
+<li><p>Manage Server</p></li>
+<li><p>Manage Channels</p></li>
+<li><p>Create Invite</p></li>
+<li><p>Manage Nicknames</p></li>
+<li><p>Read Text Channels &amp; See Voice Channels</p></li>
+<li><p>Send Messages</p></li>
+<li><p>Embed Links</p></li>
+<li><p>Manage Messages</p></li>
+<li><p>Add Reactions</p></li>
+</ul>
+</div>
+<div class="section" id="bot-administration">
+<h2>Bot Administration<a class="headerlink" href="#bot-administration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bot-prefix">
+<h3>Bot Prefix<a class="headerlink" href="#bot-prefix" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">The initial prefix of the bot when it first enters a server is <code class="docutils literal notranslate"><span class="pre">/</span></code>. However, the prefix can be customized. To set a custom prefix for your server, run the <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">prefix</span></code> command. For example, if you want to set the bot prefix to an exclamation point (!), run the following command:</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">/set</span> <span class="pre">prefix</span> <span class="pre">!</span></code></div>
+</div>
+<a class="reference internal image-reference" href="_images/bot_prefix.JPG"><img alt="Bot Prefix" src="_images/bot_prefix.JPG" style="width: 600px;" /></a>
+</div>
+<div class="section" id="auto-renumbering">
+<h3>Auto Renumbering<a class="headerlink" href="#auto-renumbering" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">There might be an instance when the number of channels gets out of order. This can be caused by a number of things, but the most common is that the API call lags due to network interference. To combat this, the Channel Manager Bot includes an Auto Renumber command to keep your channels organized. To renumber an Auto Voice Group, copy the ID of the category the group lives under and run the following command:</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">/auto</span> <span class="pre">renumber</span> <span class="pre">588406876388196353</span></code></div>
+<div class="line">“588406876388196353” in this example is the ID of the category.</div>
+</div>
+<a class="reference internal image-reference" href="_images/auto_renumber_1.JPG"><img alt="Auto Renumber 1" src="_images/auto_renumber_1.JPG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/auto_renumber_2.JPG"><img alt="Auto Renumber 2" src="_images/auto_renumber_2.JPG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/auto_renumber_3.JPG"><img alt="Auto Renumber 3" src="_images/auto_renumber_3.JPG" style="width: 600px;" /></a>
+</div>
+<div class="section" id="import-data">
+<h3>Import Data<a class="headerlink" href="#import-data" title="Permalink to this headline">¶</a></h3>
+<p>This version of the Channel Manager Bot is a rewrite of the original Auto Voice Channel Tracker Bot. If you previously had your auto voice channel groups living under that bot, you can import the data from the old database into the new one by using the <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">guilddata</span></code> command. If the server isn’t found in the old database, then you will need to recreate the auto voice channel groups.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="setup.html" class="btn btn-neutral float-right" title="Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Channel Manager Discord Bot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Woj
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
