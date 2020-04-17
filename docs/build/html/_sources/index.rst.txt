@@ -22,6 +22,10 @@ channels when they are not needed. In addition, the Channel Manager Bot can crea
 channel name on the game that the users in the channel are playing, and allow members of the server to create their own
 custom voice channels.
 
+| Feel free to join the Discord if you have any questions or need help setting up the bot!
+| `https://discord.gg/Kqv2kQT <https://discord.gg/Kqv2kQT>`_
+
+
 Auto Voice Groups
 ~~~~~~~~~~~~~~~~~
 Auto Voice Groups allow server managers to keep their voice channel lists clear of clutter. When you set up a Voice
