@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'Channel Manager'
+project = 'Voice Channel Manager'
 copyright = '2020, Woj'
 author = 'Woj'
 
@@ -54,3 +54,4 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_static_path = ['_static']
 
 master_doc = 'index'
+html_show_sourcelink = False

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Getting Started &mdash; Channel Manager  documentation</title>
+  <title>Getting Started &mdash; Voice Channel Manager  documentation</title>
   
 
   
@@ -36,7 +36,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Setup" href="setup.html" />
-    <link rel="prev" title="Channel Manager Discord Bot" href="index.html" /> 
+    <link rel="prev" title="Voice Channel Manager Discord Bot" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -50,7 +50,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Channel Manager
+            <a href="index.html" class="icon icon-home"> Voice Channel Manager
           
 
           
@@ -87,7 +87,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#bot-administration">Bot Administration</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#bot-prefix">Bot Prefix</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#auto-renumbering">Auto Renumbering</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#import-data">Import Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notification-channel">Notification Channel</a></li>
 </ul>
 </li>
 </ul>
@@ -107,7 +107,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Channel Manager</a>
+          <a href="index.html">Voice Channel Manager</a>
         
       </nav>
 
@@ -144,8 +144,6 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/getting_started.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
     
@@ -165,7 +163,7 @@
 <h2>Inviting the Bot<a class="headerlink" href="#inviting-the-bot" title="Permalink to this headline">¶</a></h2>
 <p>You can invite the bot using the following url:</p>
 <p><a class="reference external" href="https://discordapp.com/oauth2/authorize?client_id=524648043061051432&amp;permissions=8&amp;scope=bot">https://discordapp.com/oauth2/authorize?client_id=524648043061051432&amp;permissions=8&amp;scope=bot</a></p>
-<p>The Channel Manager Bot should have administration permissions to ensure that nothing prevents it from making, removing and renaming channels. If, however, you do not wish to give the bot full permissions, make sure the following permissions are enabled:</p>
+<p>The Voice Channel Manager Bot should have administration permissions to ensure that nothing prevents it from making, removing and renaming channels. If, however, you do not wish to give the bot full permissions, make sure the following permissions are enabled:</p>
 <ul class="simple">
 <li><p>Manage Server</p></li>
 <li><p>Manage Channels</p></li>
@@ -191,7 +189,7 @@
 <div class="section" id="auto-renumbering">
 <h3>Auto Renumbering<a class="headerlink" href="#auto-renumbering" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
-<div class="line">There might be an instance when the number of channels gets out of order. This can be caused by a number of things, but the most common is that the API call lags due to network interference. To combat this, the Channel Manager Bot includes an Auto Renumber command to keep your channels organized. To renumber an Auto Voice Group, copy the ID of the category the group lives under and run the following command:</div>
+<div class="line">There might be an instance when the number of channels gets out of order. This can be caused by a number of things, but the most common is that the API call lags due to network interference. To combat this, the Voice Channel Manager Bot includes an Auto Renumber command to keep your channels organized. To renumber an Auto Voice Group, copy the ID of the category the group lives under and run the following command:</div>
 <div class="line"><code class="docutils literal notranslate"><span class="pre">/auto</span> <span class="pre">renumber</span> <span class="pre">588406876388196353</span></code></div>
 <div class="line">“588406876388196353” in this example is the ID of the category.</div>
 </div>
@@ -199,9 +197,13 @@
 <a class="reference internal image-reference" href="_images/auto_renumber_2.JPG"><img alt="Auto Renumber 2" src="_images/auto_renumber_2.JPG" style="width: 600px;" /></a>
 <a class="reference internal image-reference" href="_images/auto_renumber_3.JPG"><img alt="Auto Renumber 3" src="_images/auto_renumber_3.JPG" style="width: 600px;" /></a>
 </div>
-<div class="section" id="import-data">
-<h3>Import Data<a class="headerlink" href="#import-data" title="Permalink to this headline">¶</a></h3>
-<p>This version of the Channel Manager Bot is a rewrite of the original Auto Voice Channel Tracker Bot. If you previously had your auto voice channel groups living under that bot, you can import the data from the old database into the new one by using the <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">guilddata</span></code> command. If the server isn’t found in the old database, then you will need to recreate the auto voice channel groups.</p>
+<div class="section" id="notification-channel">
+<h3>Notification Channel<a class="headerlink" href="#notification-channel" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">If you would like to be able to receive notifications from the bot owner, you can use the <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">notifications</span></code> command to get a message anytime an update has been made to the Voice Channel Manager Bot. To set this channel, copy the ID of your server and run the following command:</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">/set</span> <span class="pre">notifications</span> <span class="pre">535488093583835148</span></code></div>
+<div class="line">“535488093583835148” in this example is the ID of your server.</div>
+</div>
 </div>
 </div>
 </div>
@@ -217,7 +219,7 @@
         <a href="setup.html" class="btn btn-neutral float-right" title="Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Channel Manager Discord Bot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Voice Channel Manager Discord Bot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

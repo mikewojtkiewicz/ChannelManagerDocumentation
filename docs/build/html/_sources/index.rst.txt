@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Channel Manager Discord Bot
+Voice Channel Manager Discord Bot
 ===========================================
 
 .. toctree::
@@ -16,9 +16,9 @@ Channel Manager Discord Bot
 
 Overview
 --------
-The Channel Manager Bot is a bot that manages voice channels in Discord servers. It helps to prevent large lists of
+The Voice Channel Manager Bot is a bot that manages voice channels in Discord servers. It helps to prevent large lists of
 voice channels in a servers' channel list by automatically creating channels when none is available, and removing
-channels when they are not needed. In addition, the Channel Manager Bot can create "Game Rooms," which base the
+channels when they are not needed. In addition, the Voice Channel Manager Bot can create "Game Rooms," which base the
 channel name on the game that the users in the channel are playing, and allow members of the server to create their own
 custom voice channels.
 
@@ -29,7 +29,7 @@ custom voice channels.
 Auto Voice Groups
 ~~~~~~~~~~~~~~~~~
 Auto Voice Groups allow server managers to keep their voice channel lists clear of clutter. When you set up a Voice
-Channel Group, the Channel Manager Bot creates the initial channel. When users join the channel a new one is
+Channel Group, the Voice Channel Manager Bot creates the initial channel. When users join the channel a new one is
 created, and when they leave it is removed.
 
 .. image:: _static/auto_voice_group.gif

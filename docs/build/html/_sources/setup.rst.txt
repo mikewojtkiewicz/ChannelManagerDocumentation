@@ -10,7 +10,7 @@ The following setup commands require Administrator permissions.
 Creating an Auto Voice Group
 ----------------------------
 Auto Voice Groups allow server managers to keep their voice channel lists clear of clutter. When you set up a Voice
-Channel Group, the Channel Manager Bot creates the initial channel. When users join the channel a new one is
+Channel Group, the Voice Channel Manager Bot creates the initial channel. When users join the channel a new one is
 created, and when they leave it is removed.
 
 | To create an Auto Voice Group, run the ``/create autovoice`` command. You will need to specify the name of the Auto Voice Group, the Category ID for which the group will live and the user limit of each voice group channel. For example:
