@@ -13,6 +13,7 @@ Voice Channel Manager Discord Bot
 
    getting_started
    setup
+   temp_rooms
 
 Overview
 --------

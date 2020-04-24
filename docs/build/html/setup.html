@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Temporary Voice Channels" href="temp_rooms.html" />
     <link rel="prev" title="Getting Started" href="getting_started.html" /> 
 </head>
 
@@ -88,6 +89,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#creating-temporary-voice-channels">Creating Temporary Voice Channels</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="temp_rooms.html">Temporary Voice Channels</a></li>
 </ul>
 
             
@@ -171,7 +173,9 @@ created, and when they leave it is removed.</p>
 <h2>Creating Game Rooms<a class="headerlink" href="#creating-game-rooms" title="Permalink to this headline">¶</a></h2>
 <p>Game Rooms are channels that are tailored to the type of game that a user is playing. The voice channel gets renamed
 based on what the majority of players are playing in the channel. Like Auto Voice Groups, new channels are created
-when a user joins a Game Room so that there is always a free channel.</p>
+when a user joins a Game Room so that there is always a free channel. Presently, the Discord API doesn’t handle Custom
+Statuses that well, so if a user joins a Game Room with a custom status, the custom status will be used as the name of
+the Voice Channel.</p>
 <div class="line-block">
 <div class="line">To create Game Rooms, run the <code class="docutils literal notranslate"><span class="pre">/create</span> <span class="pre">gameroom</span></code> command. For example:</div>
 <div class="line"><code class="docutils literal notranslate"><span class="pre">/create</span> <span class="pre">gameroom</span></code></div>
@@ -203,6 +207,8 @@ the channels are deleted once all users have left the channel.</p>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="temp_rooms.html" class="btn btn-neutral float-right" title="Temporary Voice Channels" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="getting_started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

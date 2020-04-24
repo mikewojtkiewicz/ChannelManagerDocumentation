@@ -3,6 +3,7 @@
    :maxdepth: 2
    :hidden:
 
+
 Setup
 =====
 The following setup commands require Administrator permissions.
@@ -25,7 +26,9 @@ Creating Game Rooms
 -------------------
 Game Rooms are channels that are tailored to the type of game that a user is playing. The voice channel gets renamed
 based on what the majority of players are playing in the channel. Like Auto Voice Groups, new channels are created
-when a user joins a Game Room so that there is always a free channel.
+when a user joins a Game Room so that there is always a free channel. Presently, the Discord API doesn't handle Custom
+Statuses that well, so if a user joins a Game Room with a custom status, the custom status will be used as the name of
+the Voice Channel.
 
 | To create Game Rooms, run the ``/create gameroom`` command. For example:
 | ``/create gameroom``
