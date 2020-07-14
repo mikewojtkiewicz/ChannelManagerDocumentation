@@ -22,23 +22,6 @@ created, and when they leave it is removed.
   :width: 800
   :alt: Auto Voice Group
 
-Creating Game Rooms
--------------------
-Game Rooms are channels that are tailored to the type of game that a user is playing. The voice channel gets renamed
-based on what the majority of players are playing in the channel. Like Auto Voice Groups, new channels are created
-when a user joins a Game Room so that there is always a free channel. Presently, the Discord API doesn't handle Custom
-Statuses that well, so if a user joins a Game Room with a custom status, the custom status will be used as the name of
-the Voice Channel.
-
-| To create Game Rooms, run the ``/create gameroom`` command. For example:
-| ``/create gameroom``
-| You can specify a category ID if you would like, however, running the command as is will create the category for you. In addition, you can set a User Limit or leave the parameter blank if you do not wish to have a User Limit. If you do decide to set a User Limit on the Game Room channels, you will need to create your own Game Room Category. For example:
-| ``/create gameroom 700402574452588595 15``
-| The above command will create the Game Room group under a category with an ID of 700402574452588595 and set a user limit to 15.
-
-.. image:: _static/game_room_command.gif
-  :width: 800
-  :alt: Game Room
 
 Creating Temporary Voice Channels
 ---------------------------------

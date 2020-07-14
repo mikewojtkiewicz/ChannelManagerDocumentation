@@ -37,15 +37,6 @@ created, and when they leave it is removed.
   :width: 800
   :alt: Auto Voice Group
 
-Game Rooms
-~~~~~~~~~~
-Game Rooms are channels that are tailored to the type of game that a user is playing. The voice channel gets renamed
-based on what the majority of players are playing in the channel. Like Auto Voice Groups, new channels are created
-when a user joins a Game Room so that there is always a free channel.
-
-.. image:: _static/game_room.gif
-  :width: 800
-  :alt: Game Room
 
 Temporary Voice Channel
 ~~~~~~~~~~~~~~~~~~~~~~~
